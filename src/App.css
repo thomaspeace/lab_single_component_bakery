@@ -1,9 +1,106 @@
+/* not my code but centres the webpage, very useful */
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
+
+
+
+
+
+/* mine below */
+
+h1 {
+  margin-top: 0;
+  color: #894e3f;
+  text-shadow: 2px 4px #8888883c;
+}
+
+body {
+  background-color: #eee1ba;
+  color: #894e3f;
+  font-family: "Playwrite GB J", cursive;
+  font-weight: 400;
+  text-shadow: 1px 2px #8888883c;
+}
+
+.cake ul {
+  list-style-type: none;
+  text-align: left;
+}
+
+.cake {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5%;
+  box-shadow: inset;
+  width: 260px;
+  box-shadow: 5px 10px #8888883c;
+  text-shadow: 0px 0px #8888883c;
+}
+
+.cake button {
+  background-color:	#9c634f;
+  margin-bottom: 15px;
+  transition-duration: 0.8s;
+}
+
+.cake button:hover {
+  filter: drop-shadow(1px 2px #8888883c);
+}
+
+.cake-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 1024px) {
+  .cake-container {
+    grid-template-columns: 1fr 1fr; /* Two columns for medium-sized screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .cake-container {
+    grid-template-columns: 1fr; /* One column for smaller screens */
+  }
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, #E6AA82, #F0D7A7, #E6AA82);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* not mine */
 
 .logo {
   height: 6em;
